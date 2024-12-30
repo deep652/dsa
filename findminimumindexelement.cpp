@@ -37,7 +37,7 @@ int findRotationIndex(vector<int> &nums)
 
 int findRotationIndexSimplied(vector<int> &nums)
 {
-    int l=0, r=nums.size(), mid;
+    int l=0, r=nums.size()-1, mid;
     if(nums[l] < nums[r])
         return -1;
 
