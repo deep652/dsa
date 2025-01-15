@@ -15,6 +15,24 @@ class Comp
     }
 };
 
+//BAsed on the understand, we don;t need to pass the pair, only the key type is needed to 
+//write the compatator 
+
+//Note the belwo will not work, as the comparator is for priorty queue where elements are pairs
+
+// class Comp
+// {
+//     public:
+//     bool operator()(const int e1, const int e2) const
+//     {
+//         return e1 > e2; //if asc order , to change this or to make this desc order change the condition so that it stays true 
+//         //for decending order, i mean if you want e2 to come before e1 than for decending order you 6 to come beofre 5
+//         // this means if e1 is 5 and e2 6 and I want 6 to come befor, i must write the condition so that it return true
+//         /// in this very case which is e2 < e1
+//         // or simplely reverse the order 
+//     }
+// };
+
 
 vector<int> topKFrequestNumber(vector<int> nums, int k)
 {
